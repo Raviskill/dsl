@@ -1,41 +1,35 @@
-#include <stdio.h>
+#include<stdio.h>
 
-
-    int add(int arr[100], int size, int element, int capacity, int index)
+int bubble(int temp,int arr[5],int n)
+{
+    for(int i=0;i<n-1;i++)
     {
-
-        if (size >= capacity)
+        for(int j=0;j<n-i-1;j++)
         {
-            return -1;
-        }
-        else
-        {
-            for (int i = size - 1; i >= index; i--)
+            if(arr[j]>arr[j+1])
             {
-                arr[i + 1] = arr[i];
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
-            arr[index] = element;
-            size++;
         }
-
-        for (int i = 0; i < size; i++)
+        
+    }
+    for(int i=0;i<n;i++)
         {
-            printf("%d ", arr[i]);
+            printf("\t%d",arr[i]);
         }
-        printf("\n");
-
-        return 0;
-    }
-
-    int main()
-    {
-        int arr[100] = {1, 2, 3, 20, 12};
-        int size = 5;
-        int element = 55;
-        int capacity = 100;
-        int index = 3;
-
-        add(arr, size, element, capacity, index);
-
-        return 0;
-    }
+    
+    
+}
+int main()
+{
+    int arr[5]={5,30,8,15,40};
+    int temp;
+    int n=5;
+    
+    bubble(temp,arr,n);
+    
+    return 0;
+    
+}
