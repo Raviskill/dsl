@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/Ravi/Cpp-2"
+		},
+		{
+			"path": "C:/dsa"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ostream": "cpp",
+			"array": "c",
+			"initializer_list": "c",
+			"utility": "c"
+		}
+	}
+}

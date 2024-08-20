@@ -25,7 +25,7 @@ int Insert(int arr[],int n,int element)
 int Insert2(int arr[],int n,int element)
 {
     
- int a;
+ char a;
     
     
     printf("\nenter:-");
@@ -34,7 +34,7 @@ int Insert2(int arr[],int n,int element)
     if(rare==n-1){
         printf("queue is full");
     }
-    if(a==1)
+    if(a=="right")
     {
      if(rare==-1 && front ==-1){
         rare=front=0;
@@ -63,7 +63,7 @@ int Insert2(int arr[],int n,int element)
 }
 int Delete(int arr[]) 
 { 
-    int a; 
+    char a; 
      
 
     printf("\nenter:-"); 
@@ -71,7 +71,7 @@ int Delete(int arr[])
      if(rare==-1 && front == -1){ 
          printf("queue is empty!"); 
      } 
-if(a==1) 
+if(a=="right") 
 { 
       if(front==rare){ 
          front=rare=5; 
@@ -132,9 +132,7 @@ Display(arr);
  
     Display(arr); 
  
-  Delete(arr);
-
-  Display(arr);
+  
  
  
  
